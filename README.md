@@ -1,6 +1,8 @@
 # SQL to Databox
 
-How to move data from SQL to [Databox](http://databox.com) with help from [Databox Python SDK](https://github.com/databox/databox-python)?
+Anwser to the question: How to move data from SQL server to [Databox](http://databox.com) with help from [Databox Python SDK](https://github.com/databox/databox-python)?
+
+![License](http://img.shields.io/:license-mit-blue.svg)
 
 ## MySQL Example
 

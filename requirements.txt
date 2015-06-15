@@ -1,2 +1,4 @@
+requests[security] >= 2.7
+peewee==2.6
+PyMySQL
 git+https://github.com/databox/databox-python.git#egg=databox-python
-requests

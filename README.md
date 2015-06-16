@@ -6,15 +6,19 @@ Answer to the question: How to move data from SQL server to [Databox](http://dat
 
 ## MySQL → Databox streaming Example
 
-1. Create new empty `databox_example` database with stocks table.
+Create new empty `databox_example` database with stocks table.
+
 ```
 mysql -u root -vv < sql/mysql_recreate_database.sql
 ```
-2. Start [mysql_streamer.py](mysql_streamer.py) script that will "observe" stocks table for new records and stream them into Databox.
+
+Start [mysql_streamer.py](mysql_streamer.py) script that will "observe" stocks table for new records and stream them into Databox.
+
 ```
 ./mysql_streamer.py databox_example -u root -t <databox push_token>
 ```
-3. Open new command-prompt and insert few historical stock quotes with [stocks_downloader.py](stocks_downloader.py).
+
+Open new command-prompt and insert few historical stock quotes with [stocks_downloader.py](stocks_downloader.py).
 ```
 ./stocks_downloader.py YHOO -g m -x sql | mysql -u root -vv databox_example;
 ```

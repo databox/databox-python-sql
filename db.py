@@ -8,7 +8,6 @@ class BaseModel(Model):
     class Meta:
         database = db_proxy
 
-
 class Stock(BaseModel):
     class Meta:
         db_table = "stocks"
